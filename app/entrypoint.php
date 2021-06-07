@@ -3,10 +3,10 @@ use alesinicio\AsyncExecutor\AsyncExecutor;
 use alesinicio\AsyncExecutor\AsyncMultiProcess;
 use alesinicio\AsyncExecutor\AsyncProcess;
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__.'/vendor/autoload.php';
 
-$cameras = file_get_contents(__DIR__.'/../config/cameras.json');
-$cameras = json_decode($cameras, true);
+$cameras = file_get_contents(__DIR__.'/config/cameras.json');
+$cameras = json_decode((string)$cameras, true, JSON_THROW_ON_ERROR);
 
 $async = new AsyncExecutor('cvlc');
 $multiAsync	= new AsyncMultiProcess($async);

@@ -4,24 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "afea0c0890f1cbf5b7a42119bb2ca978",
+    "content-hash": "e3152e01e9abb5d4a7f68393a35b4533",
     "packages": [
         {
             "name": "alesinicio/asyncexecutor",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alesinicio/asyncexecutor.git",
-                "reference": "2af1dce9c3e77d753cbd0d83364eb329c4e78995"
+                "reference": "2e4e8eff7597e4d080e169c73dd9346a2379a1da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alesinicio/asyncexecutor/zipball/2af1dce9c3e77d753cbd0d83364eb329c4e78995",
-                "reference": "2af1dce9c3e77d753cbd0d83364eb329c4e78995",
+                "url": "https://api.github.com/repos/alesinicio/asyncexecutor/zipball/2e4e8eff7597e4d080e169c73dd9346a2379a1da",
+                "reference": "2e4e8eff7597e4d080e169c73dd9346a2379a1da",
                 "shasum": ""
             },
             "require": {
                 "psr/log": "~1.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "~0.12"
             },
             "type": "library",
             "autoload": {
@@ -32,9 +35,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/alesinicio/asyncexecutor/issues",
-                "source": "https://github.com/alesinicio/asyncexecutor/tree/1.0.0"
+                "source": "https://github.com/alesinicio/asyncexecutor/tree/1.0.1"
             },
-            "time": "2021-06-07T13:38:16+00:00"
+            "time": "2021-06-07T14:14:21+00:00"
         },
         {
             "name": "psr/log",
@@ -87,13 +90,76 @@
             "time": "2021-05-03T11:20:27+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "phpstan/phpstan",
+            "version": "0.12.88",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "464d1a81af49409c41074aa6640ed0c4cbd9bb68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/464d1a81af49409c41074aa6640ed0c4cbd9bb68",
+                "reference": "464d1a81af49409c41074aa6640ed0c4cbd9bb68",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan-shim": "*"
+            },
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.12-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.88"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpstan",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-05-17T12:24:49+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": [],
+    "platform-dev": {
+        "php": ">=7"
+    },
     "plugin-api-version": "2.1.0"
 }

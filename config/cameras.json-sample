@@ -1,0 +1,10 @@
+[
+    {
+        "port": 15000,
+        "url": "rtsp://user:password@192.168.1.100/path/to/rtspstream"
+    },
+    {
+        "port": 15001,
+        "url": "rtsp://user:password@192.168.1.200/path/to/second/rtspstream/Channel/1/substream"
+    },
+]
