@@ -1,0 +1,6 @@
+{
+	"name" : "alesinicio/rtspgateway",
+	"require" : {
+		"alesinicio/asyncexecutor" : "~1.0"
+	}
+}
