@@ -2,6 +2,7 @@ version: "3.1"
 services:
     vlc:
         build: vlc
+        env_file: .env
         volumes:
             - ./app/entrypoint.php:/app/entrypoint.php
             - ./config/cameras.json:/app/config/cameras.json
