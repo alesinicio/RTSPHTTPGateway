@@ -16,5 +16,6 @@ $i = 1;
 foreach($cameras as $camera) {
 	$option = str_replace('${PORT}', $camera['port'], $options);
 	$multiAsync->addProcess(new AsyncProcess('camera_'.$i, '', [$camera['url'], $option]));
-	$multiAsync->keepRunningProcesses();
+	$i++;
 }
+$multiAsync->keepRunningProcesses();
