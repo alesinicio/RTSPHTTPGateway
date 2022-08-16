@@ -1,7 +1,7 @@
 version: "3.1"
 services:
     vlc:
-        build: vlc
+        image: alesinicio/rtsphttpgateway:latest
         env_file: .env
         volumes:
             - ./app/entrypoint.php:/app/entrypoint.php
