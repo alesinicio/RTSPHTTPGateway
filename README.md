@@ -12,8 +12,7 @@ This project was built to solve a specific _"I need to use my RTSP camera in a b
 
 1. Clone the repository
 2. Configure the `cameras.json` and `.env` files
-3. Update the vendor folder with a `composer install` command
-4. Start the container with `docker-compose up -d`
+3. Start the container with `docker-compose up -d`
 
 ## Usage
 
