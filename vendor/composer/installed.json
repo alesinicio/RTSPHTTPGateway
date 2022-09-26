@@ -1,89 +1,164 @@
-[
-    {
-        "name": "alesinicio/asyncexecutor",
-        "version": "1.0.1",
-        "version_normalized": "1.0.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/alesinicio/asyncexecutor.git",
-            "reference": "2e4e8eff7597e4d080e169c73dd9346a2379a1da"
+{
+    "packages": [
+        {
+            "name": "alesinicio/asyncexecutor",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alesinicio/asyncexecutor.git",
+                "reference": "2e4e8eff7597e4d080e169c73dd9346a2379a1da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alesinicio/asyncexecutor/zipball/2e4e8eff7597e4d080e169c73dd9346a2379a1da",
+                "reference": "2e4e8eff7597e4d080e169c73dd9346a2379a1da",
+                "shasum": ""
+            },
+            "require": {
+                "psr/log": "~1.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "~0.12"
+            },
+            "time": "2021-06-07T14:14:21+00:00",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "alesinicio\\AsyncExecutor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/alesinicio/asyncexecutor/issues",
+                "source": "https://github.com/alesinicio/asyncexecutor/tree/1.0.1"
+            },
+            "install-path": "../alesinicio/asyncexecutor"
         },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/alesinicio/asyncexecutor/zipball/2e4e8eff7597e4d080e169c73dd9346a2379a1da",
-            "reference": "2e4e8eff7597e4d080e169c73dd9346a2379a1da",
-            "shasum": ""
+        {
+            "name": "phpstan/phpstan",
+            "version": "0.12.99",
+            "version_normalized": "0.12.99.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b4d40f1d759942f523be267a1bab6884f46ca3f7",
+                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan-shim": "*"
+            },
+            "time": "2021-09-12T20:09:55+00:00",
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.12-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.99"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/phpstan",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpstan",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../phpstan/phpstan"
         },
-        "require": {
-            "psr/log": "~1.1"
-        },
-        "require-dev": {
-            "phpstan/phpstan": "~0.12"
-        },
-        "time": "2021-06-07T14:14:21+00:00",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "alesinicio\\AsyncExecutor\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "support": {
-            "issues": "https://github.com/alesinicio/asyncexecutor/issues",
-            "source": "https://github.com/alesinicio/asyncexecutor/tree/1.0.1"
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "version_normalized": "1.1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2021-05-03T11:20:27+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "install-path": "../psr/log"
         }
-    },
-    {
-        "name": "psr/log",
-        "version": "1.1.4",
-        "version_normalized": "1.1.4.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/php-fig/log.git",
-            "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
-            "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2021-05-03T11:20:27+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.1.x-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "Psr\\Log\\": "Psr/Log/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "PHP-FIG",
-                "homepage": "https://www.php-fig.org/"
-            }
-        ],
-        "description": "Common interface for logging libraries",
-        "homepage": "https://github.com/php-fig/log",
-        "keywords": [
-            "log",
-            "psr",
-            "psr-3"
-        ],
-        "support": {
-            "source": "https://github.com/php-fig/log/tree/1.1.4"
-        }
-    }
-]
+    ],
+    "dev": true,
+    "dev-package-names": [
+        "phpstan/phpstan"
+    ]
+}

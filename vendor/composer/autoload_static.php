@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit48dd033c485a11951c5b8b32058b4fab
 {
+    public static $files = array (
+        '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'a' => 
         array (
@@ -28,11 +32,16 @@ class ComposerStaticInit48dd033c485a11951c5b8b32058b4fab
         ),
     );
 
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit48dd033c485a11951c5b8b32058b4fab::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit48dd033c485a11951c5b8b32058b4fab::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit48dd033c485a11951c5b8b32058b4fab::$classMap;
 
         }, null, ClassLoader::class);
     }
