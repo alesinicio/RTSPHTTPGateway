@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '6067986ef665d8bd4f6e38045089e664bc695b5f',
+        'reference' => 'dddf791f4d66b5320802650865d28a21e846738f',
         'name' => 'alesinicio/rtspgateway',
         'dev' => true,
     ),
@@ -25,7 +25,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '6067986ef665d8bd4f6e38045089e664bc695b5f',
+            'reference' => 'dddf791f4d66b5320802650865d28a21e846738f',
             'dev_requirement' => false,
         ),
         'phpstan/phpstan' => array(

@@ -1,0 +1,14 @@
+{
+	"name" : "alesinicio/asyncexecutor",
+	"autoload" : {
+		"psr-4" : {
+			"alesinicio\\AsyncExecutor\\" : "src/"
+		}
+	},
+	"require" : {
+		"psr/log" : "~1.1"
+	},
+	"require-dev" : {
+		"phpstan/phpstan" : "~0.12"
+	}
+}
